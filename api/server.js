@@ -3,6 +3,7 @@ const helmet = require('helmet');
 const cors = require('cors');
 
 const usersRouter = require('../users/users-router');
+const authRouter = require('../auth/auth-router');
 
 const server = express();
 
@@ -14,6 +15,7 @@ server.get('/', (req, res) => {
   res.send({ message: 'I am alive' });
 });
 
-server.use('/api/isers', usersRouter);
+server.use('/api/users', usersRouter);
+server.use('/api/auth', authRouter);
 
-module.exports = server
+module.exports = server;
