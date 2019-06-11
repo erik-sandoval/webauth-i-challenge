@@ -1,0 +1,19 @@
+{
+  "name": "webauth-i-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/erik-sandoval/webauth-i-challenge.git",
+  "author": "erik-sandoval <erik.sandoval@icloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "server":"nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.17.5",
+    "node": "^12.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
